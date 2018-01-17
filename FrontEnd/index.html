@@ -3,18 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div class="header">
+      <h1>Header</h1>
+    </div>
 
-    <div class="side-bar">
-      <p id="notes">
+    <div class="container">
+      <div class="side-bar">
+        <h2>All Notes</h2>
+        <button type="button" id="new-note">Create New Note</button>
+        <div id="all-notes">
 
-      </p>
+        </div>
+
+      </div>
+      <div class="main">
+        <h2>Main</h2>
+        <div id="main-display">
+          <form id="new-note-form">
+            <label for="">Create New Note</label><br>
+            <input type="text" name="title" value="Title"><br>
+            <input type="textarea" name="body" value="Body"><br>
+            <input type="submit" value="Submit Note">
+          </form>
+
+          <form id="update-note-form">
+            <label for="">Create New Note</label><br>
+            <input type="text" name="title" ><br>
+            <input type="textarea" name="body" ><br>
+            <input type="submit" value="Update Note">
+          </form>
+        </div>
+
+
+      </div>
     </div>
 
 
-    <script src="index.js"></script>
-    <script src="note.js"></script>
-    <script src="user.js"></script>
+<!-- it is not listedin the instructions -->
+  <script src="index.js"></script>
+  <script src="note.js"></script>
+  <script src="user.js"></script>
   </body>
 </html>

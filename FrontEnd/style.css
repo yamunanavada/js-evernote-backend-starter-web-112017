@@ -1,0 +1,57 @@
+
+body {
+  font-family: arial;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2, p {
+  margin-left: 20px;
+}
+
+.header {
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.side-bar {
+  background-color: lightblue;
+  height: 1000px;
+  width: 25%;
+  float: left;
+}
+
+.main {
+  background-color: yellow;
+  height: 1000px;
+  width: 75%;
+  float: right;
+}
+
+.footer {
+  background-color: violet;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+}
+
+#new-note-form {
+  display: none;
+  height: 1000px;
+  width: 75%;
+  float: right;
+
+}

@@ -1,13 +1,15 @@
+
 const Note = function(){
 
-  let id = 0;
-
   return class Note {
-    constructor(title, body, user){
-      this.id = ++id
-      this.title = title
-      this.body = body
-      this.user = user
+    constructor(note){
+      this.title = note.title
+      this.body = note.body
+      this.user = note.user
+      this.id = note.id
+      Note.all.push(this);
     }
   }
 }();
+
+Note.all = [];
